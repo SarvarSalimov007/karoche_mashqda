@@ -1,0 +1,20 @@
+jins = input("Jinsni kiriting (ayol/erkak): ").lower()
+yosh = int(input("Yoshni kiriting: "))
+e_yosh = 60
+a_yosh = 55
+if jins == "erkak" and yosh >= 60 or yosh <= 120:
+    print(f"Bobo,siz nafaqa yoshidasiz!")
+    print(f" Siz {yosh % e_yosh} yildan beri nafaqadasiz!")
+elif  jins  == "erkak" and yosh <= 59 or yosh >= 0:
+    print(f"Hurmatli mijoz siz nafaqa yoshida emassiz!")
+    print(f"Sizga hali {yosh % e_yosh} yil bor!")
+elif jins == "ayol" and yosh >= 55 or yosh <= 120:
+    print(f"Buvi, siz nafaqa yoshidasiz!")
+    print(f"Siz {yosh % a_yosh} yildan beri nafaqadasiz!")
+elif jins == "ayol" and yosh <= 54 or yosh >= 0:
+    print(f"Hurmatli mijoz siz nafaqa yoshida emassiz!")
+    print(f"Sizga hali {yosh % a_yosh} yil bor!")
+elif jins == "ayol" or "erkak" and yosh < 0 and yosh > 120:
+    print("Ma'lumotlar noto'g'ri kiritildi!")
+else:
+    print("Ma'lumotlar xato kiritilgan!")
