@@ -9,3 +9,5 @@ elif jins == "erkak" and yosh >= 60 or jins == "erkak" and yosh <= 120:
     print(f"Siz {yosh % 60} yildan beri nafaqadasiz!")
 elif jins ==  "erkak" or jins == "ayol" and yosh > 120 and yosh < 0:
     print("Ma'lumotlar noto'g'ri kiritilgan!")
+else:
+    print("Ma'lumotla noto'g'ri kiritilgan!")
